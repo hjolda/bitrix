@@ -59,4 +59,4 @@ $APPLICATION->SetTitle("Блог");
 		"STRICT_SECTION_CHECK" => "N"
 	)
 );?>
-</p><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>
+<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

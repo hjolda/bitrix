@@ -8,11 +8,11 @@ IncludeTemplateLangFile(__FILE__);
 	</div><!--END #content-->	
 
 	<div id="footer">
-			<div class="bg_top_footer">
-				<div class="top_footer">
-					<div class="f_widget first">
-						<h3><strong>О</strong> нас</h3>
-						<a href="#" class="footer_logo">AutoDealer</a>
+		<div class="bg_top_footer">
+			<div class="top_footer">
+				<div class="f_widget first">
+					<h3><strong>О</strong> нас</h3>
+					<a href="#" class="footer_logo">AutoDealer</a>
 						<?
 						$APPLICATION->IncludeFile(
 							SITE_DIR."include/motto.php",
@@ -20,9 +20,9 @@ IncludeTemplateLangFile(__FILE__);
 							Array("MODE"=>"html")
 						);
 						?>
-					</div>
-					<div class="f_widget divide second">
-						<h3><strong>Часы</strong> работы</h3>
+				</div>
+				<div class="f_widget divide second">
+					<h3><strong>Часы</strong> работы</h3>
 						<?
 						$APPLICATION->IncludeFile(
 							SITE_DIR."include/schedule.php",
@@ -30,11 +30,11 @@ IncludeTemplateLangFile(__FILE__);
 							Array("MODE"=>"html")
 						);
 						?>
-					</div>
-					<div class="fwidget_separator"></div>
-					<div class="f_widget third">
-						<h3><strong>Our</strong> contacts</h3>
-						<div class="f_contact f_contact_1"><strong>Адрес:<br></strong>
+				</div>
+				<div class="fwidget_separator"></div>
+				<div class="f_widget third">
+					<h3><strong>Our</strong> contacts</h3>
+					<div class="f_contact f_contact_1"><strong>Адрес:<br></strong>
 						<?
 						$APPLICATION->IncludeFile(
 							SITE_DIR."include/address.php",
@@ -42,8 +42,8 @@ IncludeTemplateLangFile(__FILE__);
 							Array("MODE"=>"html")
 						);
 						?>
-						</div>
-						<div class="f_contact f_contact_2"><strong>Телефон:</strong>
+				</div>
+				<div class="f_contact f_contact_2"><strong>Телефон:</strong>
 						<?
 						$APPLICATION->IncludeFile(
 							SITE_DIR."include/phone.php",
@@ -51,14 +51,14 @@ IncludeTemplateLangFile(__FILE__);
 							Array("MODE"=>"html")
 						);
 						?>							
-						</div>
-						<div class="f_contact f_contact_3"><strong>Email:</strong> <a href="mailto:#">testmail@sitename.com</a></div>
-					</div>
-					<div class="f_widget divide last frame_wrapper">
-						<img src="<?=SITE_TEMPLATE_PATH?>/images/winter.jpg" alt="" style="max-width: 100%">
-					</div>
 				</div>
+				<div class="f_contact f_contact_3"><strong>Email:</strong> <a href="mailto:#">testmail@sitename.com</a></div>
 			</div>
+			<div class="f_widget divide last frame_wrapper">
+				<img src="<?=SITE_TEMPLATE_PATH?>/images/winter.jpg" alt="" style="max-width: 100%">
+			</div>
+		</div>
+	</div>
 			<div class="bottom_footer">
 			<?$APPLICATION->IncludeComponent("bitrix:menu", "horizontal_multilevel", array(
 						"ROOT_MENU_TYPE" => "bottom",
@@ -95,9 +95,6 @@ IncludeTemplateLangFile(__FILE__);
 				?>
 				</div>
 			</div>
-		</div>
-	
-
-		
+	</div>
 </body>
 </html>
