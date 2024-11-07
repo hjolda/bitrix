@@ -13,13 +13,6 @@ IncludeTemplateLangFile(__FILE__);
 				<div class="f_widget first">
 					<h3><strong>О</strong> нас</h3>
 					<a href="#" class="footer_logo">AutoDealer</a>
-						<?
-						$APPLICATION->IncludeFile(
-							SITE_DIR."include/motto.php",
-							Array(),
-							Array("MODE"=>"html")
-						);
-						?>
 				</div>
 				<div class="f_widget divide second">
 					<h3><strong>Часы</strong> работы</h3>
@@ -52,7 +45,6 @@ IncludeTemplateLangFile(__FILE__);
 						);
 						?>							
 				</div>
-				<div class="f_contact f_contact_3"><strong>Email:</strong> <a href="mailto:#">testmail@sitename.com</a></div>
 			</div>
 			<div class="f_widget divide last frame_wrapper">
 				<img src="<?=SITE_TEMPLATE_PATH?>/images/winter.jpg" alt="" style="max-width: 100%">
@@ -85,7 +77,7 @@ IncludeTemplateLangFile(__FILE__);
 				</div>
 			</div>
 			<div class="copyright_wrapper">
-				<div class="copyright">
+			    <div class="copyright">
 				<?
 				$APPLICATION->IncludeFile(
 					SITE_DIR."include/copyright.php",

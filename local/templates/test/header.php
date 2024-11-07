@@ -1,5 +1,5 @@
-<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
-<?
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();
+use Bitrix\Main\Page\Asset;
 IncludeTemplateLangFile(__FILE__);
 ?>
 <!DOCTYPE html>
@@ -8,22 +8,23 @@ IncludeTemplateLangFile(__FILE__);
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <?$APPLICATION->ShowHead();?>
 <!-- new template styles-->
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style980.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style800.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style700.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style600.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style500.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/style400.css" />
-<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/css/jquery.fancybox-1.3.4.css" media="screen" />
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.bxslider.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.mousewheel.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.selectik.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.fancybox-1.3.4.pack.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.countdown.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/jquery.checkbox.js"></script>
-<script type="text/javascript" src="<?=SITE_TEMPLATE_PATH?>/js/js.js"></script>
+<?php
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style980.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style800.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style700.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style600.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style500.css");
+Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style400.css");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery-1.8.3.min.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.bxslider.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.mousewheel.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.selectik.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.fancybox-1.3.4.pack.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.countdown.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/jquery.checkbox.js");
+Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/js.js");
+?>
 </head>
 <body class="page">
 	<div id="panel"><?$APPLICATION->ShowPanel();?></div>

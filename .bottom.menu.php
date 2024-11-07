@@ -2,22 +2,8 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Компания", 
-		"company/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
-		"Продукция", 
-		"products/", 
-		Array(), 
-		Array(), 
-		"" 
-	),
-	Array(
 		"Авторизация", 
-		"login/", 
+		"bitrix/", 
 		Array(), 
 		Array(), 
 		"" 
