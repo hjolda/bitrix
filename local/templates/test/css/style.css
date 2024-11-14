@@ -150,7 +150,7 @@ cite{
 	font-weight: bold;
 	text-decoration: none;
 }
-#header .top_info .logo a span{
+#header .top_info .logo a span span{
 	color: #FFB01F;
 }
 #header .top_info .header_contacts{

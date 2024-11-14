@@ -4,7 +4,7 @@
 <div class="recent_blog">
 	<?foreach ($arResult['ITEMS'] as $arItem) { ?>
 	<div class="post_block">
-		<img src="<?= $arItem[' PREVIEW_PICTURE']['SRC']; ?>"
+		<img src="<?= $arItem['PREVIEW_PICTURE']['SRC']; ?>"
 			alt="">
 		<br>
 		<h5>

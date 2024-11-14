@@ -1,1 +1,2 @@
-<?php echo date("Y"); ?>, AutoDealer
+<?php
+echo date("Y");
