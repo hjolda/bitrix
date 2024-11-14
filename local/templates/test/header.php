@@ -11,9 +11,8 @@ IncludeTemplateLangFile(__FILE__);
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<?$APPLICATION->ShowHead();?>
-<!-- new template styles-->
 <?php
+$APPLICATION->ShowHead();
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style980.css");
 Asset::getInstance()->addCss(SITE_TEMPLATE_PATH . "/css/style800.css");
@@ -32,7 +31,7 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/js.js");
 ?>
 </head>
 <body class="page">
-    <div id="panel"><?$APPLICATION->ShowPanel();?></div>
+    <div id="panel"><?php $APPLICATION->ShowPanel(); ?></div>
     <div id="header">
         <div class="top_info">
             <div class="logo">
@@ -134,4 +133,4 @@ Asset::getInstance()->addJs(SITE_TEMPLATE_PATH . "/js/js.js");
     <div id="content">
         <div class="content">
             <div id="workarea">
-            <h1 id="pagetitle" class="pagetitle"><?$APPLICATION->ShowTitle(false);?></h1>
+            <h1 id="pagetitle" class="pagetitle"><?php $APPLICATION->ShowTitle(false); ?></h1>
