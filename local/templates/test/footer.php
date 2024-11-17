@@ -37,31 +37,31 @@ IncludeTemplateLangFile(__FILE__);
 				</a>
 				<p>
 					<?php
-                                       $APPLICATION->IncludeComponent(
-                                           'bitrix:news.line',
-                                           'line',
-                                           [
-                                               'IBLOCK_TYPE' => 'line',
-                                               'IBLOCKS' => ['', '6'],
-                                               'NEWS_COUNT' => '1',
-                                               'FIELD_CODE' => [
-                                                   0 => 'PROPERTY_MOTTO',
-                                               ],
-                                               'CACHE_TYPE' => 'A',
-                                               'CACHE_TIME' => '0',
-                                               'CACHE_GROUPS' => 'Y',
-                                           ]
-                                       ); ?>
+                                                          $APPLICATION->IncludeComponent(
+                                                              'bitrix:news.line',
+                                                              'line',
+                                                              [
+                                                                  'IBLOCK_TYPE' => 'line',
+                                                                  'IBLOCKS' => ['', '6'],
+                                                                  'NEWS_COUNT' => '1',
+                                                                  'FIELD_CODE' => [
+                                                                      0 => 'PROPERTY_MOTTO',
+                                                                  ],
+                                                                  'CACHE_TYPE' => 'A',
+                                                                  'CACHE_TIME' => '0',
+                                                                  'CACHE_GROUPS' => 'Y',
+                                                              ]
+                                                          ); ?>
 				</p>
 			</div>
 			<div class="f_widget divide second">
 				<h3><strong>Часы</strong> работы</h3>
 				<?php
-$APPLICATION->IncludeFile(
-    SITE_DIR.'include/schedule.php',
-    [],
-    ['MODE' => 'html']
-);
+                $APPLICATION->IncludeFile(
+                    SITE_DIR.'include/schedule.php',
+                    [],
+                    ['MODE' => 'html']
+                );
 ?>
 			</div>
 			<div class="fwidget_separator"></div>
@@ -164,11 +164,11 @@ $APPLICATION->IncludeComponent(
 	<div class="copyright_wrapper">
 		<div class="copyright">
 			<?php
-		                                $APPLICATION->IncludeFile(
-		                                    SITE_DIR.'include/copyright.php',
-		                                    [],
-		                                    ['MODE' => 'html']
-		                                );
+		                                        $APPLICATION->IncludeFile(
+		                                            SITE_DIR.'include/copyright.php',
+		                                            [],
+		                                            ['MODE' => 'html']
+		                                        );
 ?>,
 			<?php
 $APPLICATION->IncludeComponent(
