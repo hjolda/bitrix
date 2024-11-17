@@ -1,8 +1,10 @@
 <?php
+
 require $_SERVER['DOCUMENT_ROOT'].'/bitrix/header.php';
+
 $APPLICATION->SetTitle('Блог');
-?>
-<?$APPLICATION->IncludeComponent(
+
+$APPLICATION->IncludeComponent(
     'bitrix:news.list',
     'blog',
     [
@@ -21,5 +23,6 @@ $APPLICATION->SetTitle('Блог');
         'SORT_ORDER1' => 'ASC',
         'SORT_ORDER2' => 'DESC',
     ]
-); ?>
-<?require $_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php'; ?>
+);
+
+require $_SERVER['DOCUMENT_ROOT'].'/bitrix/footer.php';

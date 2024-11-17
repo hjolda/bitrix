@@ -1,6 +1,9 @@
-<?if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
+<?php
+
+if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
     exit;
 }
+
 IncludeTemplateLangFile(__FILE__);
 ?>
 </div><!--END #workarea-->
@@ -15,108 +18,107 @@ IncludeTemplateLangFile(__FILE__);
 			<div class="f_widget first">
 				<h3><strong>О</strong> нас</h3>
 				<a href="#" class="footer_logo">
-				<?php
-				   $APPLICATION->IncludeComponent(
-					   'bitrix:news.line',
-					   'line',
-					   [
-						   'IBLOCK_TYPE' => 'line',
-						   'IBLOCKS' => ['', '6'],
-						   'NEWS_COUNT' => '1',
-						   'FIELD_CODE' => [
-							   0 => 'PROPERTY_COMPANY_NAME',
-						   ],
-						   'CACHE_TYPE' => 'A',
-						   'CACHE_TIME' => '0',
-						   'CACHE_GROUPS' => 'Y',
-					   ]
-				   ); ?>
+					<?php
+                   $APPLICATION->IncludeComponent(
+                       'bitrix:news.line',
+                       'line',
+                       [
+                           'IBLOCK_TYPE' => 'line',
+                           'IBLOCKS' => ['', '6'],
+                           'NEWS_COUNT' => '1',
+                           'FIELD_CODE' => [
+                               0 => 'PROPERTY_COMPANY_NAME',
+                           ],
+                           'CACHE_TYPE' => 'A',
+                           'CACHE_TIME' => '0',
+                           'CACHE_GROUPS' => 'Y',
+                       ]
+                   ); ?>
 				</a>
 				<p>
-				<?php
-				   $APPLICATION->IncludeComponent(
-					   'bitrix:news.line',
-					   'line',
-					   [
-						   'IBLOCK_TYPE' => 'line',
-						   'IBLOCKS' => ['', '6'],
-						   'NEWS_COUNT' => '1',
-						   'FIELD_CODE' => [
-							   0 => 'PROPERTY_MOTTO',
-						   ],
-						   'CACHE_TYPE' => 'A',
-						   'CACHE_TIME' => '0',
-						   'CACHE_GROUPS' => 'Y',
-					   ]
-				   ); ?>
+					<?php
+                                       $APPLICATION->IncludeComponent(
+                                           'bitrix:news.line',
+                                           'line',
+                                           [
+                                               'IBLOCK_TYPE' => 'line',
+                                               'IBLOCKS' => ['', '6'],
+                                               'NEWS_COUNT' => '1',
+                                               'FIELD_CODE' => [
+                                                   0 => 'PROPERTY_MOTTO',
+                                               ],
+                                               'CACHE_TYPE' => 'A',
+                                               'CACHE_TIME' => '0',
+                                               'CACHE_GROUPS' => 'Y',
+                                           ]
+                                       ); ?>
 				</p>
 			</div>
 			<div class="f_widget divide second">
 				<h3><strong>Часы</strong> работы</h3>
 				<?php
-                        $APPLICATION->IncludeFile(
-                            SITE_DIR.'include/schedule.php',
-                            [],
-                            ['MODE' => 'html']
-                        );
+$APPLICATION->IncludeFile(
+    SITE_DIR.'include/schedule.php',
+    [],
+    ['MODE' => 'html']
+);
 ?>
 			</div>
 			<div class="fwidget_separator"></div>
 			<div class="f_widget third">
 				<h3><strong>Our</strong> contacts</h3>
 				<div class="f_contact f_contact_1"><strong>Адрес:<br></strong>
-				<?php
-				   $APPLICATION->IncludeComponent(
-					   'bitrix:news.line',
-					   'line',
-					   [
-						   'IBLOCK_TYPE' => 'line',
-						   'IBLOCKS' => ['', '6'],
-						   'NEWS_COUNT' => '1',
-						   'FIELD_CODE' => [
-							   0 => 'PROPERTY_ADDRESS',
-						   ],
-						   'CACHE_TYPE' => 'A',
-						   'CACHE_TIME' => '0',
-						   'CACHE_GROUPS' => 'Y',
-					   ]
-				   ); ?>
+					<?php
+$APPLICATION->IncludeComponent(
+    'bitrix:news.line',
+    'line',
+    [
+        'IBLOCK_TYPE' => 'line',
+        'IBLOCKS' => ['', '6'],
+        'NEWS_COUNT' => '1',
+        'FIELD_CODE' => [
+            0 => 'PROPERTY_ADDRESS',
+        ],
+        'CACHE_TYPE' => 'A',
+        'CACHE_TIME' => '0',
+        'CACHE_GROUPS' => 'Y',
+    ]
+); ?>
 				</div>
 				<div class="f_contact f_contact_2"><strong>Телефон:</strong>
 					<?php
-				   $APPLICATION->IncludeComponent(
-					   'bitrix:news.line',
-					   'line',
-					   [
-						   'IBLOCK_TYPE' => 'line',
-						   'IBLOCKS' => ['', '6'],
-						   'NEWS_COUNT' => '1',
-						   'FIELD_CODE' => [
-							   0 => 'PROPERTY_PHONE',
-						   ],
-						   'CACHE_TYPE' => 'A',
-						   'CACHE_TIME' => '0',
-						   'CACHE_GROUPS' => 'Y',
-					   ]
-				   ); ?>
+$APPLICATION->IncludeComponent(
+    'bitrix:news.line',
+    'line',
+    [
+        'IBLOCK_TYPE' => 'line',
+        'IBLOCKS' => ['', '6'],
+        'NEWS_COUNT' => '1',
+        'FIELD_CODE' => [
+            0 => 'PROPERTY_PHONE',
+        ],
+        'CACHE_TYPE' => 'A',
+        'CACHE_TIME' => '0',
+        'CACHE_GROUPS' => 'Y',
+    ]
+); ?>
 				</div>
 				<div class="f_contact f_contact_3"><strong>Email:</strong>
 					<?php
-                    $APPLICATION->IncludeComponent(
-                        'bitrix:news.line',
-                        'line',
-                        [
-                            'IBLOCK_TYPE' => 'line',
-                            'IBLOCKS' => ['', '6'],
-                            'NEWS_COUNT' => '1',
-                            'FIELD_CODE' => [
-                                0 => 'PROPERTY_EMAIL',
-                            ],
-                            'CACHE_TYPE' => 'A',
-                            'CACHE_TIME' => '0',
-                            'CACHE_GROUPS' => 'Y',
-                        ]
-                    ); ?>
+$APPLICATION->IncludeComponent(
+    'bitrix:news.line',
+    'line',
+    [
+        'IBLOCK_TYPE' => 'line',
+        'NEWS_COUNT' => '1',
+        'FIELD_CODE' => [
+            0 => 'PROPERTY_EMAIL',
+        ],
+        'CACHE_TYPE' => 'A',
+        'CACHE_TIME' => '0',
+        'CACHE_GROUPS' => 'Y',
+    ]
+); ?>
 				</div>
 			</div>
 			<div class="f_widget divide last frame_wrapper">
@@ -162,28 +164,28 @@ IncludeTemplateLangFile(__FILE__);
 	<div class="copyright_wrapper">
 		<div class="copyright">
 			<?php
-                $APPLICATION->IncludeFile(
-                    SITE_DIR.'include/copyright.php',
-                    [],
-                    ['MODE' => 'html']
-                );
-				?>,
-				<?php
-				   $APPLICATION->IncludeComponent(
-					   'bitrix:news.line',
-					   'line',
-					   [
-						   'IBLOCK_TYPE' => 'line',
-						   'IBLOCKS' => ['', '6'],
-						   'NEWS_COUNT' => '1',
-						   'FIELD_CODE' => [
-							   0 => 'PROPERTY_COMPANY_NAME',
-						   ],
-						   'CACHE_TYPE' => 'A',
-						   'CACHE_TIME' => '0',
-						   'CACHE_GROUPS' => 'Y',
-					   ]
-				   ); ?>
+		                                $APPLICATION->IncludeFile(
+		                                    SITE_DIR.'include/copyright.php',
+		                                    [],
+		                                    ['MODE' => 'html']
+		                                );
+?>,
+			<?php
+$APPLICATION->IncludeComponent(
+    'bitrix:news.line',
+    'line',
+    [
+        'IBLOCK_TYPE' => 'line',
+        'IBLOCKS' => ['', '6'],
+        'NEWS_COUNT' => '1',
+        'FIELD_CODE' => [
+            0 => 'PROPERTY_COMPANY_NAME',
+        ],
+        'CACHE_TYPE' => 'A',
+        'CACHE_TIME' => '0',
+        'CACHE_GROUPS' => 'Y',
+    ]
+); ?>
 		</div>
 	</div>
 </div>
