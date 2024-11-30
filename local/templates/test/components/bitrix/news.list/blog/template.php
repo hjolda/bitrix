@@ -1,21 +1,13 @@
-<?php
-
-if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
-    exit;
-}?>
-
+<?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 <div class="recent_blog">
-    <?php foreach ($arResult['ITEMS'] as $arItem) { ?>
-    <div class="post_block">
-        <img src="<?= $arItem['PREVIEW_PICTURE']['SRC']; ?>"
-            alt="">
-        <br>
-        <h5><?= $arItem['NAME']; ?></h5>
-        <?php if ($arItem['DISPLAY_ACTIVE_FROM']) { ?>
-        <div class="date"><?= $arItem['DISPLAY_ACTIVE_FROM']; ?></div>
-        <?php } ?>
-        <div class="post"><?= $arItem['PREVIEW_TEXT']; ?></div>
-    </div>
-    <?php } ?>
-</div>
+<?foreach($arResult["ITEMS"] as $arItem):?>
+	<div class="post_block">
+		<a href="#" class="thumb"><img src="<?echo $arItem["PREVIEW_PICTURE"]["SRC"]?>" alt=""></a>
+		<h5><?echo $arItem["PREVIEW_TEXT"]?></h5>
+		<?if ($arItem["DISPLAY_ACTIVE_FROM"]) {?>
+		<div class="date"><?echo $arItem["DISPLAY_ACTIVE_FROM"]?></div>
+		<?}?>
+		<div class="post"><?echo $arItem["DETAIL_TEXT"]?></div>
+	</div>
+<?endforeach;?>
 <div class="clear"></div>
